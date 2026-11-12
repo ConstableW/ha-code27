@@ -1,0 +1,35 @@
+# Python and test artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+.venv/
+venv/
+
+# Editors and local output
+.vscode/
+.idea/
+*.log
+dist/
+build/
+*.egg-info/
+
+# Local investigation artifacts
+.local-archive/
+audit-runtime-20260909/
+code27-origin-comparison-20260910.json
+code27-app-presence-comparison-20260910.json
+code27-app-transition-comparison-20260910.json
+origin-status-probe.cjs
+/area_summary.json
+/entries*.json
+/light_history.json
+/logbook*.json
+/options_flow_start.json
+/services_dump*.json
+/states_dump.json
+*.lnk

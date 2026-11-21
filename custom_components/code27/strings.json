@@ -85,9 +85,6 @@
       "model_loading": {
         "name": "Character model loading"
       },
-      "device_screen_on": {
-        "name": "Screen on"
-      },
       "device_locked": {
         "name": "Locked"
       },
@@ -163,6 +160,9 @@
     "switch": {
       "alarm": {
         "name": "Alarm"
+      },
+      "display_screen": {
+        "name": "Display"
       }
     },
     "media_player": {
@@ -182,6 +182,13 @@
       },
       "ai_language_select": {
         "name": "AI language"
+      },
+      "game_mode": {
+        "name": "Device mode",
+        "state": {
+          "LIVE": "Live",
+          "MUSIC": "Music"
+        }
       }
     },
     "todo": {
@@ -201,6 +208,11 @@
       },
       "acknowledge_notification": {
         "name": "Acknowledge notification"
+      }
+    },
+    "number": {
+      "display_brightness": {
+        "name": "Display brightness"
       }
     }
   },

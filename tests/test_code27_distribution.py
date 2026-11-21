@@ -122,7 +122,7 @@ class StandaloneSetupTests(unittest.IsolatedAsyncioTestCase):
         const.CONF_HOST, const.CONF_PORT = "host", "port"
         const.Platform = types.SimpleNamespace(**{
             name: name for name in (
-                "BINARY_SENSOR", "BUTTON", "IMAGE", "LIGHT", "MEDIA_PLAYER",
+                "BINARY_SENSOR", "BUTTON", "IMAGE", "LIGHT", "MEDIA_PLAYER", "NUMBER",
                 "SELECT", "SENSOR", "SWITCH", "TODO",
             )
         })

@@ -85,9 +85,6 @@
       "model_loading": {
         "name": "Charaktermodell wird geladen"
       },
-      "device_screen_on": {
-        "name": "Bildschirm an"
-      },
       "device_locked": {
         "name": "Gesperrt"
       },
@@ -163,6 +160,9 @@
     "switch": {
       "alarm": {
         "name": "Alarm"
+      },
+      "display_screen": {
+        "name": "Display"
       }
     },
     "media_player": {
@@ -182,6 +182,13 @@
       },
       "ai_language_select": {
         "name": "KI-Sprache"
+      },
+      "game_mode": {
+        "name": "Gerätemodus",
+        "state": {
+          "LIVE": "Live",
+          "MUSIC": "Musik"
+        }
       }
     },
     "todo": {
@@ -201,6 +208,11 @@
       },
       "acknowledge_notification": {
         "name": "Hinweis quittieren"
+      }
+    },
+    "number": {
+      "display_brightness": {
+        "name": "Display-Helligkeit"
       }
     }
   },

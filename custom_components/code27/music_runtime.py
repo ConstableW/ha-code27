@@ -7,7 +7,7 @@ already in parallel:
     CODE27 provider (coordinator + Code27Client + media_player entity)
         -> this runtime (queue / playlists / playback lifecycle)
         -> hase/code27/music WebSocket contract
-        -> custom_components/code27/cards/haseamp-card.js
+        -> custom_components/hase/cards/haseamp-card.js
 
 It reuses the existing CODE27 music infrastructure rather than replacing it:
 the playback snapshot comes from ``Code27Data.music_playback`` /

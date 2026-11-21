@@ -63,6 +63,12 @@ class Code27ExternalHub:
 
         return unsubscribe
 
+    async def set_tool_dispatcher(self, dispatcher) -> None:
+        """Optional contract-v1 addition (firmware >= 1.6.0): a consumer such as
+        HASE hands in the catalog/execution behind the Codie tool gateway; None
+        withdraws it. Without a dispatcher this device registers no tools."""
+        await self._coordinator.async_set_tool_dispatcher(dispatcher)
+
     async def send_chat_reply(self, text: str, slot: int, language: str | None = None) -> str | None:
         return await self._coordinator.async_send_chat_reply(text, slot, language)
 
@@ -73,9 +79,6 @@ class Code27ExternalHub:
         return await self._coordinator.async_send_chat_image_reply(
             image, filename, content_type, text, slot, language
         )
-
-    async def cleanup_assist_exchange(self, slot: int, chat_ids: list[str]):
-        return await self._coordinator.async_cleanup_assist_exchange(slot, chat_ids)
 
     async def speak_text(self, text: str, *, expected_slot: int | None = None) -> None:
         await async_speak_text(self._hass, self._entry, self._coordinator, text, expected_slot=expected_slot)
